@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -18,9 +18,7 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
-                <Form.Group className="mb-3 text-danger" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Agree with our terms & condition?" />
-                </Form.Group>
+                <p className='text-white fs-6'>New to our site? please <Link className='text-decoration-none fw-bold text-danger' to="/register">Sign Up</Link></p>
                 <Button variant="danger" type="submit">
                     Login
                 </Button>
